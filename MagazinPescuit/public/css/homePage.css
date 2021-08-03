@@ -1,0 +1,35 @@
+body {
+    font-family: "Nunito", sans-serif;
+    background-image: url('image/homeimage6.jpg');
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    width: 80%;
+    margin: auto;
+}
+.hometext {
+    text-indent: 0;
+    font-size: 24px;
+    margin: 25px;
+    padding: 25px;
+    color: rgb(0, 0, 0);
+}
+.hometext p {
+    text-indent: 0;
+}
+.big-text {
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    font-size: 5rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #000000;
+    transition: transform 0.9s;
+}
+.big-text:hover {
+    color: #38c172;
+    transform: translate(-50%, 40%);
+    transform: scale(1.3);
+}
+.colorblue {
+    color: #23583a;
+}

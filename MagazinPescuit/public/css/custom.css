@@ -1,0 +1,120 @@
+.create_template { 
+    background-image: url('image/barca-pescuit.jpg');
+    background-size: cover; 
+}
+.index_template {
+    background-color: transparent;
+    background-size: cover;
+}
+.edit_template {
+    background-color: transparent;
+    background-size: cover;
+}
+.show_template {
+    
+    background-size: cover;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+body {
+    /* background-color: brown; */
+    background-image: url('https://images.pexels.com/photos/1105386/pexels-photo-1105386.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' );
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    width: 80%;
+    margin: auto;
+  }
+
+.containerform {
+    background: transparent; 
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 599px;
+}
+.outform {
+    width: 50%;
+    height: 100%;
+    border-radius: 7px;
+    background-color: transparent;
+    padding: 20px;   
+}
+.form {
+    width: 100%;
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+}
+.form input {
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 16px;
+    font-weight: 900;
+    padding-top: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.form label {
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+.form label::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #38c172;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+.content-name {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3 ease;
+    font-weight: 400;
+}
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+    transform: translateY(-120%);
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after {
+    transform: translateX(0%);
+}
+
+/* send message button */
+#createItemButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 10px 15px;
+    width: 150px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    background-color: #38c172;
+    transition: transform 0.9s;
+}
+#createItemButton:hover {
+    background: #38c172;
+    transform: scale(1.3);
+}
