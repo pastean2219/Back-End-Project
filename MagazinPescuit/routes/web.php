@@ -38,4 +38,3 @@ Route::put('/MagazinPescuit/{item}', [FishingController::class, 'update'])->name
 
 Route::delete('/MagazinPescuit/{item}/', [FishingController::class, 'destroy'])->name('fishing_gear.destroy');
 
-Route::get("/mulinete", [\App\Http\Controllers\FishingController::class, "mulinete"]);

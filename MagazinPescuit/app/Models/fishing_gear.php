@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class fishing_gear extends Model
 {
     protected $fillable = ['Categorie','Producator','Model', 'Pret', 'Descriere', 'Disponibilitate'];
-    //protected $table = 'pescuit';
+   
     use HasFactory;
 
     public function user(){
